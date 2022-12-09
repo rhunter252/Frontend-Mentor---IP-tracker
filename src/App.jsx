@@ -98,7 +98,7 @@ const App = () => {
               className="bg-white rounded-xl p-8 shadow max-w-6xl mx-auto grid grid-cols-1 gap-5 text-center md:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:text-left -mb-10 relative lg:-mb-32"
               style={{ zIndex: "1000" }}
             >
-              <div className="lg:border-r lg:border-slate-600">
+              <div className="lg:border-r lg:border-slate-900 pl-4">
                 <h2 className="uppercase text-sm mb-3 tracking-wider">
                   IP Address
                 </h2>
@@ -106,19 +106,19 @@ const App = () => {
                   {address.ip}
                 </p>
               </div>
-              <div className="lg:border-r lg:border-slate-600">
+              <div className="lg:border-r lg:border-slate-600 pl-4">
                 <h2 className="uppercase text-sm mb-3">Location</h2>
                 <p className="text-lg font-bold text-slate-900 md:text-xl xl:text-2xl">
                   {address.location.city}, {address.location.region}
                 </p>
               </div>
-              <div className="lg:border-r lg:border-slate-600">
+              <div className="lg:border-r lg:border-slate-600 pl-4">
                 <h2 className="uppercase text-sm mb-3">Timezone</h2>
                 <p className="text-lg font-bold text-slate-900 md:text-xl xl:text-2xl">
                   {address.location.timezone}
                 </p>
               </div>
-              <div>
+              <div className="pl-4">
                 <h2 className="uppercase text-sm mb-3">ISP</h2>
                 <p className="text-lg font-bold text-slate-900 md:text-xl xl:text-2xl">
                   {address.isp}
